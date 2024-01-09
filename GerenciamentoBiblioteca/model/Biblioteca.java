@@ -27,7 +27,7 @@ public class Biblioteca {
             livro.setDisponivel(false);
             Emprestimo emprestimo = new Emprestimo(livro, dataEmprestimo, dataDevolucaoPrevista);
             emprestimos.add(emprestimo);
-            System.out.println("Empréstimo realizado com sucesso!");
+            System.out.println("\nEmpréstimo realizado com sucesso!\n");
         } else {
             System.out.println("Livro não está disponível para empréstimo.");
         }
@@ -37,7 +37,7 @@ public class Biblioteca {
         Livro livroDevolvido = emprestimo.getLivro();
         livroDevolvido.setDisponivel(true);
         emprestimos.remove(emprestimo);
-        System.out.println("Devolução realizada com sucesso!");
+        System.out.println("\nDevolução realizada com sucesso!\n");
     }
 
     public void mostrarLivrosDisponiveis() {
